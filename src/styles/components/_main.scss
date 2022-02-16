@@ -1,0 +1,12 @@
+@mixin bg-gradient($angle: 180deg, $color: $primary, $amount: 50%) {
+    background: linear-gradient($angle, $color, adjust-hue($color, $amount))
+        fixed;
+}
+.main__background {
+    @include bg-gradient;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,26 @@
+.button__icon {
+    font-size: xx-large;
+    color: $secondary;
+
+    transition: font-size 0.3s ease;
+}
+
+.linkedin:hover {
+    color: $linkedin;
+    @include desktop {
+        font-size: 3em;
+    }
+}
+
+.twitter:hover {
+    color: $twitter;
+    @include desktop {
+        font-size: 3em;
+    }
+}
+.facebook:hover {
+    color: $facebook;
+    @include desktop {
+        font-size: 3em;
+    }
+}
