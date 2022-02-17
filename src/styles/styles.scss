@@ -1,6 +1,8 @@
 @import "./base/settings";
 @import "./base/base";
-@import "./components/main";
-@import "./components/card";
-@import "./components/buttonGroup";
-@import "./components/button";
+@import "./components/main/button";
+@import "./components/main/buttonGroup";
+@import "./components/main/card";
+@import "./components/main/main";
+@import "./components/main/goto";
+@import "./components/projects/projects";

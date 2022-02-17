@@ -1,5 +1,5 @@
 import React from "react";
-import Angel from "../resources/Angel.jpg";
+import Angel from "../../resources/Angel.jpg";
 const CardPhoto = () => {
     return (
         <div className="card__image-container">

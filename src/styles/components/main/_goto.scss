@@ -1,0 +1,28 @@
+.goto__container{
+    align-items: flex-end;
+    display: flex;
+    height: 10vh;
+    justify-content: end;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.goto__button{
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    background-color: #FFA500;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    *{
+        margin-left: 10px;
+        color: white;
+    }
+    i{
+        color: black;
+    }
+    @include desktop{
+        margin-bottom: 2vh;
+    }
+}
+

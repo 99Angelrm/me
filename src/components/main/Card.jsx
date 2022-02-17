@@ -3,6 +3,7 @@ import ButtonsGroup from "./ButtonsGroup";
 import CardPhoto from "./CardPhoto";
 import CardText from "./CardText";
 import "animate.css";
+import GoToProjects from "./GoToProjects";
 
 const Card = () => {
     return (
@@ -10,6 +11,7 @@ const Card = () => {
             <CardPhoto />
             <CardText />
             <ButtonsGroup />
+            <GoToProjects/>
         </div>
     );
 };

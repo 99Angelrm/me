@@ -1,0 +1,55 @@
+.projects__container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.projects__goBack {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10vh;
+    i {
+        transform: rotate(180deg);
+        font-size: xx-large;
+    }
+    @include desktop {
+        margin-bottom: 2vh;
+    }
+}
+
+.projects__projects-grid {
+    height: 95vh;
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    flex-wrap: wrap;
+    overflow: scroll;
+    @include desktop {
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+            width: 0; /* Remove scrollbar space */
+            background: transparent; /* Optional: just make scrollbar invisible */
+        }
+    }
+}
+.projects__project {
+    width: 50%;
+    height: auto;
+    margin-bottom: 1vh;
+    justify-content: center;
+    color: white;
+    img {
+        height: 25vh;
+    }
+    @include desktop{
+        width: auto;
+        height: fit-content;
+        margin: 10px 10px 10px 10px;
+        img{
+            height: 35vh;
+        }
+    }
+}
