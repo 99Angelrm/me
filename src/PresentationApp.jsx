@@ -5,10 +5,10 @@ import ProjectsScreen from "./components/projects/ProjectsScreen";
 
 const PresentationApp = () => {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
             <Routes>
                 <Route path="/me" element={<MainScreen />} />
-                <Route path='/me/projects' element={<ProjectsScreen/>}/>
+                <Route path="/me/projects" element={<ProjectsScreen />} />
             </Routes>
         </BrowserRouter>
     );
