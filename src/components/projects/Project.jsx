@@ -1,13 +1,13 @@
 import React from "react";
-import calc from "../../resources/Calc.jpg";
-const Project = () => {
+const Project = ({ link, src, title }) => {
     const handleClick = () => {
-        window.open("https://react-calculator-f0a79.web.app/", "_blank");
+        window.open(link, "_blank");
     };
+    console.log(src)
     return (
         <div onClick={handleClick} className="projects__project pointer">
-            <img src={calc} alt="calculator" />
-            <h5>Calculator App</h5>
+            <img src={src} alt={title} />
+            <h5>{title}</h5>
         </div>
     );
 };
